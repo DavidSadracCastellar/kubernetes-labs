@@ -1,0 +1,11 @@
+minikube addons list
+minikube addons enable metrics-server
+
+Asegurar el directorio: "metrics" , donde estan todas las metrics a aplicar. Con esto HPA va a funcionar.
+
+kubectl apply -f metrics/
+kubectl -n kube-system get pods
+
+Solicitud continua:
+
+while true; do wget -q -O- http://CLUSTER_IP:PORT 

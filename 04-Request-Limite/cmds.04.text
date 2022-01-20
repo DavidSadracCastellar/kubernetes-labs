@@ -1,0 +1,13 @@
+minikube kubectl -- apply -f 01-hello-app-service-node-port.yaml
+minikube kubectl -- apply -f 02-hello-app-deployment.yaml
+minikube kubectl -- get pods
+minikube kubectl -- exec -it hello-8688c85749-plwv2 sh
+    env |grep MYSQL_
+minikube kubectl -- get nodes
+minikube kubectl -- describe node  nombre-del-nodo
+minikube kubectl -- get deployments
+minikube kubectl -- scale --replicas=10 deployment nombre-del-deployment
+
+
+NOTE: 2 cpu = 2000 mili-core
+

@@ -1,0 +1,2 @@
+Liveness Probe:   Vivo (Para saber si el pod está vivo)
+Readiness Probe:  Listo (para saber si el pod está listo)
